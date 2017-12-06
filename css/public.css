@@ -1,0 +1,62 @@
+body {
+  background: #FFF;
+  color: #5e5e5e;
+  font: 12px/1.5 Arial,simsun;
+  text-align: left; }
+
+.wrapper {
+  width: 990px;
+  margin: 0 auto; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#gome-header #logo {
+  margin: 30px 40px 0 0; }
+  #gome-header #logo a {
+    display: block;
+    background: url(../images/register/registerlogo.png) no-repeat;
+    width: 300px;
+    height: 62px;
+    margin-top: 16px; }
+
+#gome-content {
+  background: #A70852;
+  height: 585px; }
+  #gome-content .content-header {
+    border: 1px solid #E6E6E6;
+    padding-bottom: 21px;
+    margin-top: 68px;
+    position: relative; }
+    #gome-content .content-header .exchange {
+      position: absolute;
+      top: -42px;
+      left: 100px; }
+      #gome-content .content-header .exchange li {
+        float: left;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        font: bold 14px/41px "Microsoft YaHei";
+        margin-left: 2px;
+        color: #5e5e5e;
+        background: #F3F3F3;
+        border: 1px solid #e6e6e6;
+        border-bottom: 0 none;
+        cursor: pointer; }
+      #gome-content .content-header .exchange li.active {
+        background: #fff;
+        color: #cc0000;
+        border-top: 2px solid #cc0000; }
+
+#gome-foot {
+  background: #DD0606; }
+  #gome-foot #gome-foot-box {
+    position: relative;
+    padding: 20px 0 0;
+    background: #f7f7f7; }
+
+/*# sourceMappingURL=public.css.map */
