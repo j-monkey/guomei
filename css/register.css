@@ -1,13 +1,120 @@
-
-#gome-header {
-  width: 990px;
- }
-
-#logo a {
-  background: url(../images/register/registerlogo.png) no-repeat;
-  width: 300px;
-  height: 62px;
-  display: block;
-  margin: 18px 40px 0 0; }
+.register {
+  border: 1px solid #E6E6E6;
+  padding-bottom: 21px;
+  margin-top: 90px;
+  position: relative;
+  background: url("../images/register/fuli.png") no-repeat scroll 580px -60px; }
+  .register .login-info {
+    position: absolute;
+    top: -30px;
+    right: 20px; }
+  .register .exchange {
+    position: absolute;
+    top: -54px;
+    left: 100px; }
+    .register .exchange li {
+      float: left;
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      font: bold 14px/41px "Microsoft YaHei";
+      margin-left: 2px;
+      color: #5e5e5e;
+      background: #F3F3F3;
+      border: 1px solid #e6e6e6;
+      border-bottom: 0 none;
+      cursor: pointer; }
+    .register .exchange li.active {
+      background: #fff;
+      color: #cc0000;
+      border-top: 2px solid #cc0000; }
+  .register .form-list {
+    height: 500px;
+    padding-top: 30px;
+    margin-top: 10px; }
+    .register .form-list .padding {
+      position: absolute;
+      left: 150px;
+      top: 10px;
+      font-family: simsun; }
+    .register .form-list #registerForm {
+      font-size: 14px; }
+      .register .form-list #registerForm > div {
+        position: relative; }
+        .register .form-list #registerForm > div > i {
+          display: block;
+          width: 17px;
+          height: 17px;
+          background: url("../images/register/register.png") no-repeat 0 -20px;
+          overflow: hidden;
+          position: absolute;
+          top: 10px;
+          left: 435px; }
+      .register .form-list #registerForm .form-hide {
+        visibility: hidden;
+        height: 40px;
+        padding-left: 150px; }
+      .register .form-list #registerForm .form-show {
+        height: 40px; }
+        .register .form-list #registerForm .form-show > span {
+          padding-left: 100px;
+          display: inline;
+          width: 100; }
+        .register .form-list #registerForm .form-show input {
+          width: 288px;
+          height: 36px;
+          padding: 0 4px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #a5a5a5;
+          vertical-align: middle;
+          position: relative; }
+        .register .form-list #registerForm .form-show .tips {
+          visibility: visible;
+          display: inline-block;
+          width: 320px;
+          height: 36px;
+          padding: 0 4px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #C21919; }
+      .register .form-list #registerForm #boxCheck .slider {
+        display: inline-block;
+        width: 296px;
+        height: 36px;
+        border: 1px solid #ccc;
+        color: #a5a5a5;
+        vertical-align: middle;
+        position: relative; }
+        .register .form-list #registerForm #boxCheck .slider .hide-box {
+          display: inline-block;
+          height: 36px;
+          width: 0px;
+          background: #05EE38;
+          float: left;
+          z-index: 99; }
+        .register .form-list #registerForm #boxCheck .slider .slider-min {
+          position: absolute;
+          display: inline-block;
+          height: 16px;
+          width: 30px;
+          background: #05EE38;
+          padding: 10px 8px;
+          left: 0;
+          top: 0; }
+        .register .form-list #registerForm #boxCheck .slider .slider-box {
+          display: inline-block;
+          padding: 10px 60px 0;
+          color: #787878; }
+      .register .form-list #registerForm #submit-button {
+        padding-left: 170px; }
+        .register .form-list #registerForm #submit-button #submit {
+          color: white;
+          font-size: 16px;
+          background: red;
+          border: none;
+          width: 300px;
+          padding: 10px 0;
+          letter-spacing: 5px; }
 
 /*# sourceMappingURL=register.css.map */

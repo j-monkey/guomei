@@ -2,8 +2,102 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>登录</title>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/normalize.css">
 	</head>
 	<body>
+	<!--头部-->
+	<div id="gome-header" class='wrapper'>
+			<div id="logo"><a data-code="public03001" href="//www.gome.com.cn/"></a></div>
+			<div id="head-title"></div>
+			<div id="head-box"></div>
+		</div>
+	<!-- 中间部分 -->
+	<div id='content-bg'>
+		<div class='wrapper main-login'>
+			<!-- 登录盒子 -->
+			<div class="login-box">
+				<div class="login-header">	
+					<div class="loginTab tabLeft" id="tabLeft">
+						<a href="javascript:void(0)" class="cur">扫码登录</a>
+					</div>
+					<div class="loginTab tabRight" id="tabRight">
+						<a href="javascript:void(0)">账户登录</a>
+					</div>
+				</div>
+				<div class="login-content">
+					<!-- 扫码登录 -->
+					<div id="qrcodeMain">
+						<div class="qrcode-main clearfix" id="barcodeId">
+							<img class="qrcode qrcode-Image" src="https://login.gome.com.cn/getQrcode.no?width=165&height=165&refreshkey=97" >
+							<img class="qrcode qrcode-help" src="../images/login/mobile" >
+						</div>
+						<div class="qrcode-tip">
+							<p>打开手机</p>
+							<p>扫码登录</p>
+							<a class="fontBlink fr registerBtn" href="https://reg.gome.com.cn/register/index/person" target="_blank" title="免费注册" tabindex="7">免费注册</a>
+						</div>
+					</div>
+					<form action="" id='login-form'>
+						<p>
+							<label for="">用户名：</label><input type="text" name="username" id="user" />
+						</p>
+						<p>
+							<label for="">密　码：</label><input type="text" name="password" id="pass" />
+						</p>
+						<p><input type="button" id="btn" value="登录" /></p>
+					</form>
+				</div>
+				<div class="login-bot">
+					<a href="http://myhome.gome.com.cn/member/loginStore" class="borderLine" title="门店会员卡登录">门店会员卡登录</a>
+					<a id="corp_qq" href="https://login.gome.com.cn/quicklogin/qqLogin.no" target="_parent" title="QQ" tabindex="8" class="borderLine"><em>QQ</em></a>
+					<a id="corp_weixin" href="https://login.gome.com.cn/quicklogin/wechatLogin.no" target="_parent" title="微信" tabindex="18" class="borderLine">微信</a>
+					<a id="corp_sina" href="https://login.gome.com.cn/quicklogin/sinaLogin.no" target="_parent" title="新浪微博" tabindex="10" class="borderLine">微博</a>
+					<a id="corp_gomezhifu" href="https://login.gome.com.cn/quicklogin/gomePayLogin.no" target="_parent" title="美付宝" tabindex="17">美付宝</a>
+					<a id="corp_jixintong" href="https://login.gome.com.cn/quicklogin/jixinLogin.no" target="_parent" title="极信通" tabindex="16" class="borderLine hide">极信通</a>
+					<a id="corp_alipay" href="https://login.gome.com.cn/quicklogin/alipayLogin.no" target="_parent" title="支付宝" tabindex="9" class="hide">支付宝</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+		<!--尾部-->
+		<div id="gome-foot" class='wrapper'>
+				<div id="gome-foot-box">
+					<ul class="foot-box-top">
+						<li><a href="http://igome.com/" target="_blank" rel="nofollow" >国美集团</a></li>
+						<li><a href="//www.gomegj.com/" target="_blank" >国美管家</a></li>
+						<li><a href="//help.gome.com.cn/about/company.html" target="_blank" rel="nofollow" >关于国美</a></li>
+						<li><a href="//zp.gome.com.cn" target="_blank" rel="nofollow" >加入我们</a></li><li>|</li>
+						<li><a href="//brand.gome.com.cn/" target="_blank" >品牌大全</a></li>
+						<li><a href="//www.gome.com.cn/topic/" target="_blank" >商品专题</a></li>
+						<li><a href="//www.gome.com.cn/pifa/" target="_blank" >批发大全</a></li>
+						<li><a href="//www.gome.com.cn/hotwords/" target="_blank" >热词搜索</a></li>
+						<li><a href="//www.gome.com.cn/links/" target="_blank" rel="nofollow" >友情链接</a></li>
+						<li><a href="//news.gome.com.cn/4-8ef49f4b-1-8.html" target="_blank" rel="nofollow" >风险监测</a></li><li>|</li>
+						<li><a href="//cps.gome.com.cn/" target="_blank" rel="nofollow" >销售联盟</a></li>
+						<li><a href="//www.gome.com.cn/join/" target="_blank" rel="nofollow" >商家入驻</a></li>
+					</ul>
+					<p>本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-60766055&nbsp;&nbsp;<a class="interDrug" href="http://gfs13.gomein.net.cn/T1cPYvBmYT1RCvBVdK.jpg" target="_blank">互联网药品信息服务资格证编号（京）-经营性-2013-0011</a></p>
+					<p>国美在线电子商务有限公司&nbsp;&nbsp;办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区&nbsp;&nbsp;客服电话:4008708708</p>
+					<p>©2000-2017&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;京公安网备11010502027062&nbsp;&nbsp;沪ICP备11009419号&nbsp;&nbsp;沪B2-20120004号</p>
+					<div class="foot-box-bot">
+						<a  href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqpugb8ivnfez35upwknav4n" target="_blank" rel="nofollow">
+							<i></i><b>经营性网站备案信息</b></a>
+						<a  href="https://ss.knet.cn/verifyseal.dll?sn=2011071100100011373&comefrom=trust" target="_blank" rel="nofollow">
+							<i></i><b>可信网站信用评价</b></a>
+						<a  href="http://search.cxwz.org/cert/l/CX20111018000607000618" target="_blank" rel="nofollow"><i></i><b>诚信网站</b></a>
+						<a  href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow">
+							<i></i><b>朝阳网络警察</b></a>
+						<a  href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow">
+							<i></i><b>网购大家评</b></a>
+						<a  href="http://www.shjbzx.cn/" target="_blank" rel="nofollow">
+							<i></i><b>上海市互联网违法和不良信息举报中心</b></a>
+					</div>
+						<em class="turst-gome"></em>
+					</div>
+				
+			</div>
 	</body>
 </html>

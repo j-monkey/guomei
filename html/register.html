@@ -17,15 +17,80 @@
 		</div>
 		<!--注册部分tab切换-->
 		<div id="gome-content" class=' wrapper'>
-			<div class="register">
-				<div class="content-header">
-					<ul class='exchange'>
-						<li>个人用户注册</li>
-						<li>企业用户注册</li>
-					</ul>
+		<div class="register">
+		<ul class='exchange'>
+			<li>个人用户注册</li>
+			<li>企业用户注册</li>
+		</ul>
+		<p class="login-info">我已经注册，现在就<a href="./login.html">登录</a></p>
+		<div class="form-list">
+			<span class='padding'></span>
+		<!--个人注册表单 -->
+			<form id="registerForm" class='form' name="registerForm" action="" method="post">
+			<!-- 用户名 -->
+			<div  id='username'>
+				<div class='form-show'>
+					<span><label>&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label></span><input type="text" name='username'/>
+					<div class='tips'>4-20个字符，支持汉字、字母、数字及“-”、“_”组合</div>
+				</div>
+				<i></i>
+				<div class='form-hide'>
+					<p>推荐您使用：</p>		
 				</div>
 			</div>
-			<div class="content-main"></div>
+			<!-- 密码 -->
+			<div id='password'>
+				<div class='form-show'>
+					<span><label>设置密码：</label></span><input type="password" name='password'/>
+					<div class='tips'>6-20个字符，建议由数字,字母,符号两种以上组合</div>
+				</div>
+				<i></i>
+				<div class='form-hide'>
+					<p >安全程度：</p>
+				<!-- <div class="pw-letter clearfix">
+						<span>弱</span>
+						<span>中</span>
+						<span>强</span>
+					</div> -->
+				</div>
+			</div>
+			<!-- 确认密码 -->
+			<div>
+				<div class='form-show'>
+					<span><label>确认密码：</label></span><input type="password" name='username'/>
+					<div class='tips'>请确认密码！</div>
+				</div>
+				<i></i>
+				<div class='form-hide'>
+					<p>两次输入不符合</p>	
+				</div>
+			</div>
+			<!-- 滑动验证 -->
+			<div id='boxCheck'>
+				<div class='form-show'>
+					<span><label>滑动验证：</label>
+					<div class='slider'>
+						<span class='hide-box'></span>
+						<span class='slider-box'>请按住滑块,拖到最右边</span>
+						<span class='slider-min'>＞＞</span>
+					</div>	
+					<div class='tips'>请重新验证！</div>
+				</div>
+				<i></i>
+				<div class='form-hide'>
+					<p>验证失败</p>	
+				</div>
+			</div>
+			<!-- 立即注册 -->
+			<div id='submit-button'>
+				<input type="submit" id='submit' value='立即注册'>
+			</div>
+			</form>	
+	<!-- 企业注册表单 -->
+	
+		
+		</div>
+		</div>	
 		</div>
 		<!--尾部-->
 		<div id="gome-foot" class='wrapper'>
@@ -48,12 +113,17 @@
 				<p>国美在线电子商务有限公司&nbsp;&nbsp;办公地址:上海市嘉定区沪宜公路3163-3199号一楼A区&nbsp;&nbsp;客服电话:4008708708</p>
 				<p>©2000-2017&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;京公安网备11010502027062&nbsp;&nbsp;沪ICP备11009419号&nbsp;&nbsp;沪B2-20120004号</p>
 				<div class="foot-box-bot">
-					<a  href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqpugb8ivnfez35upwknav4n" target="_blank" rel="nofollow"><i></i><b>经营性网站备案信息</b></a>
-					<a  href="https://ss.knet.cn/verifyseal.dll?sn=2011071100100011373&comefrom=trust" target="_blank" rel="nofollow"><i></i><b>可信网站信用评价</b></a>
+					<a  href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqpugb8ivnfez35upwknav4n" target="_blank" rel="nofollow">
+						<i></i><b>经营性网站备案信息</b></a>
+					<a  href="https://ss.knet.cn/verifyseal.dll?sn=2011071100100011373&comefrom=trust" target="_blank" rel="nofollow">
+						<i></i><b>可信网站信用评价</b></a>
 					<a  href="http://search.cxwz.org/cert/l/CX20111018000607000618" target="_blank" rel="nofollow"><i></i><b>诚信网站</b></a>
-					<a  href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow"><i></i><b>朝阳网络警察</b></a>
-					<a  href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow"><i></i><b>网购大家评</b></a>
-					<a  href="http://www.shjbzx.cn/" target="_blank" rel="nofollow"><i></i><b>上海市互联网违法和不良信息举报中心</b></a>
+					<a  href="http://www.bj.cyberpolice.cn/index.do" target="_blank" rel="nofollow">
+						<i></i><b>朝阳网络警察</b></a>
+					<a  href="http://shwg.dianping.com/index.html" target="_blank" rel="nofollow">
+						<i></i><b>网购大家评</b></a>
+					<a  href="http://www.shjbzx.cn/" target="_blank" rel="nofollow">
+						<i></i><b>上海市互联网违法和不良信息举报中心</b></a>
 				</div>
 					<em class="turst-gome"></em>
 				</div>

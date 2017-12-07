@@ -1,3 +1,219 @@
+.register {
+  border: 1px solid #E6E6E6;
+  padding-bottom: 21px;
+  margin-top: 90px;
+  position: relative;
+  background: url("../images/register/fuli.png") no-repeat scroll 580px -60px; }
+  .register .login-info {
+    position: absolute;
+    top: -30px;
+    right: 20px; }
+  .register .exchange {
+    position: absolute;
+    top: -54px;
+    left: 100px; }
+    .register .exchange li {
+      float: left;
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      font: bold 14px/41px "Microsoft YaHei";
+      margin-left: 2px;
+      color: #5e5e5e;
+      background: #F3F3F3;
+      border: 1px solid #e6e6e6;
+      border-bottom: 0 none;
+      cursor: pointer; }
+    .register .exchange li.active {
+      background: #fff;
+      color: #cc0000;
+      border-top: 2px solid #cc0000; }
+  .register .form-list {
+    height: 500px;
+    padding-top: 30px;
+    margin-top: 10px; }
+    .register .form-list .padding {
+      position: absolute;
+      left: 150px;
+      top: 10px;
+      font-family: simsun; }
+    .register .form-list #registerForm {
+      font-size: 14px; }
+      .register .form-list #registerForm > div {
+        position: relative; }
+        .register .form-list #registerForm > div > i {
+          display: block;
+          width: 17px;
+          height: 17px;
+          background: url("../images/register/register.png") no-repeat 0 -20px;
+          overflow: hidden;
+          position: absolute;
+          top: 10px;
+          left: 435px; }
+      .register .form-list #registerForm .form-hide {
+        visibility: hidden;
+        height: 40px;
+        padding-left: 150px; }
+      .register .form-list #registerForm .form-show {
+        height: 40px; }
+        .register .form-list #registerForm .form-show > span {
+          padding-left: 100px;
+          display: inline;
+          width: 100; }
+        .register .form-list #registerForm .form-show input {
+          width: 288px;
+          height: 36px;
+          padding: 0 4px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #a5a5a5;
+          vertical-align: middle;
+          position: relative; }
+        .register .form-list #registerForm .form-show .tips {
+          visibility: visible;
+          display: inline-block;
+          width: 320px;
+          height: 36px;
+          padding: 0 4px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #C21919; }
+      .register .form-list #registerForm #boxCheck .slider {
+        display: inline-block;
+        width: 296px;
+        height: 36px;
+        border: 1px solid #ccc;
+        color: #a5a5a5;
+        vertical-align: middle;
+        position: relative; }
+        .register .form-list #registerForm #boxCheck .slider .hide-box {
+          display: inline-block;
+          height: 36px;
+          width: 0px;
+          background: #05EE38;
+          float: left;
+          z-index: 99; }
+        .register .form-list #registerForm #boxCheck .slider .slider-min {
+          position: absolute;
+          display: inline-block;
+          height: 16px;
+          width: 30px;
+          background: #05EE38;
+          padding: 10px 8px;
+          left: 0;
+          top: 0; }
+        .register .form-list #registerForm #boxCheck .slider .slider-box {
+          display: inline-block;
+          padding: 10px 60px 0;
+          color: #787878; }
+      .register .form-list #registerForm #submit-button {
+        padding-left: 170px; }
+        .register .form-list #registerForm #submit-button #submit {
+          color: white;
+          font-size: 16px;
+          background: red;
+          border: none;
+          width: 300px;
+          padding: 10px 0;
+          letter-spacing: 5px; }
+
+#content-bg {
+  width: 100%;
+  height: 480px;
+  background: #e40264; }
+  #content-bg .main-login {
+    height: 480px;
+    width: 1200px;
+    background-image: url("../images/login/main.jpg");
+    background-position: top center;
+    position: relative;
+    z-index: 990; }
+    #content-bg .main-login .login-box {
+      width: 350px;
+      float: right;
+      margin-top: 24px;
+      margin-right: 105px;
+      position: relative;
+      background: #fff;
+      overflow: visible; }
+  #content-bg .login-header {
+    position: relative;
+    height: 55px; }
+    #content-bg .login-header .loginTab {
+      float: left;
+      width: 174px;
+      height: 54px;
+      border-bottom: 1px solid #f4f4f4;
+      font: 500 18px "Microsoft Yahei";
+      text-align: center;
+      color: #5e5e5e;
+      position: relative; }
+      #content-bg .login-header .loginTab a {
+        height: 18px;
+        position: absolute;
+        left: 0;
+        width: 99%;
+        text-decoration: none;
+        top: 16px;
+        border-right: 1px solid #f4f4f4; }
+        #content-bg .login-header .loginTab a.cur {
+          color: red; }
+  #content-bg .login-content {
+    width: 320px;
+    height: 250px; }
+    #content-bg .login-content #qrcodeMain {
+      display: none;
+      width: 320px; }
+      #content-bg .login-content #qrcodeMain .qrcode-main {
+        position: relative;
+        height: 165px;
+        text-align: center; }
+        #content-bg .login-content #qrcodeMain .qrcode-main .qrcode {
+          float: left;
+          position: absolute;
+          left: 85px;
+          top: 30px;
+          border: 1px solid #e6e6e6; }
+      #content-bg .login-content #qrcodeMain .qrcode-tip {
+        height: 80px;
+        width: 320px;
+        padding-top: 30px;
+        text-align: center;
+        position: relative; }
+        #content-bg .login-content #qrcodeMain .qrcode-tip .fontBlink {
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+          color: #e40264;
+          text-decoration: underline; }
+    #content-bg .login-content #login-form p {
+      margin: 20px 50px 0; }
+      #content-bg .login-content #login-form p input {
+        width: 160px;
+        height: 30px;
+        padding: 0 4px;
+        border: 1px solid #ccc;
+        font: normal 14px/36px Arial,"Simsun";
+        color: #a5a5a5;
+        vertical-align: middle;
+        position: relative; }
+  #content-bg .login-bot {
+    overflow: hidden;
+    clear: both;
+    background-color: #fcfcfc;
+    padding: 9px 5px;
+    color: #a5a5a5;
+    position: relative;
+    border: 1px solid #f0f0f0; }
+    #content-bg .login-bot a {
+      float: left;
+      white-space: nowrap;
+      cursor: pointer;
+      color: #5e5e5e;
+      padding: 0 5px;
+      margin: 6px 0;
+      border-right: 1px solid #E7E6E6; }
+
 body {
   background: #FFF;
   color: #5e5e5e;
@@ -8,55 +224,93 @@ body {
   width: 990px;
   margin: 0 auto; }
 
-li {
-  list-style: none; }
+ul, ol, li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none; }
 
 a {
-  text-decoration: none; }
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none; }
 
-#gome-header #logo {
-  margin: 30px 40px 0 0; }
-  #gome-header #logo a {
-    display: block;
-    background: url(../images/register/registerlogo.png) no-repeat;
-    width: 300px;
-    height: 62px;
-    margin-top: 16px; }
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
+#gome-header {
+  padding-top: 5px; }
+  #gome-header #logo {
+    margin: 30px 40px 0 0; }
+    #gome-header #logo a {
+      display: block;
+      width: 300px;
+      height: 62px;
+      margin-top: 20px;
+      background: url("../images/login/loginlogo.png") no-repeat; }
 
 #gome-content {
-  background: #A70852;
-  height: 585px; }
-  #gome-content .content-header {
-    border: 1px solid #E6E6E6;
-    padding-bottom: 21px;
-    margin-top: 68px;
-    position: relative; }
-    #gome-content .content-header .exchange {
-      position: absolute;
-      top: -42px;
-      left: 100px; }
-      #gome-content .content-header .exchange li {
-        float: left;
-        width: 150px;
-        height: 40px;
-        text-align: center;
-        font: bold 14px/41px "Microsoft YaHei";
-        margin-left: 2px;
-        color: #5e5e5e;
-        background: #F3F3F3;
-        border: 1px solid #e6e6e6;
-        border-bottom: 0 none;
-        cursor: pointer; }
-      #gome-content .content-header .exchange li.active {
-        background: #fff;
-        color: #cc0000;
-        border-top: 2px solid #cc0000; }
+  height: 562px;
+  padding: 0 0 21 0; }
 
 #gome-foot {
   background: #DD0606; }
-  #gome-foot #gome-foot-box {
-    position: relative;
-    padding: 20px 0 0;
-    background: #f7f7f7; }
+
+#gome-foot-box {
+  position: relative;
+  padding: 20px 0 0;
+  background: #f7f7f7; }
+  #gome-foot-box .foot-box-top {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0; }
+    #gome-foot-box .foot-box-top li {
+      float: left;
+      font: 12px/22px Arial,"Microsoft YaHei";
+      padding: 0 13px 0 0;
+      white-space: nowrap; }
+      #gome-foot-box .foot-box-top li a {
+        color: #666; }
+  #gome-foot-box p {
+    font: 12px/22px Arial;
+    color: #999;
+    margin: 0;
+    padding: 0; }
+  #gome-foot-box .foot-box-bot {
+    border-top: 1px solid #e6e6e6;
+    margin-top: 5px;
+    padding: 10px 0 25px;
+    overflow: hidden; }
+    #gome-foot-box .foot-box-bot a i {
+      display: block;
+      width: 35px;
+      height: 35px;
+      float: left; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(1) i {
+      background: url(../images/ui.png) no-repeat 0px -180px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(2) i {
+      background: url(../images/ui.png) no-repeat -35px -180px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(3) i {
+      background: url(../images/ui.png) no-repeat -70px -180px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(4) i {
+      background: url(../images/ui.png) no-repeat -105px -180px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(5) i {
+      background: url(../images/ui.png) no-repeat -140px -180px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(6) i {
+      background: url(../images/ui.png) no-repeat -175px -180px; }
+    #gome-foot-box .foot-box-bot a b {
+      font: 12px/18px Arial,"Microsoft YaHei";
+      display: block;
+      width: 60px;
+      float: left;
+      color: #999;
+      padding: 0 30px 0 5px; }
+    #gome-foot-box .foot-box-bot a:nth-of-type(3) b, #gome-foot-box .foot-box-bot a:nth-of-type(5) b {
+      margin-top: 9px; }
 
 /*# sourceMappingURL=public.css.map */

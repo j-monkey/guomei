@@ -1,0 +1,98 @@
+#content-bg {
+  width: 100%;
+  height: 480px;
+  background: #e40264; }
+  #content-bg .main-login {
+    height: 480px;
+    width: 1200px;
+    background-image: url("../images/login/main.jpg");
+    background-position: top center;
+    position: relative;
+    z-index: 990; }
+    #content-bg .main-login .login-box {
+      width: 350px;
+      float: right;
+      margin-top: 24px;
+      margin-right: 105px;
+      position: relative;
+      background: #fff;
+      overflow: visible; }
+  #content-bg .login-header {
+    position: relative;
+    height: 55px; }
+    #content-bg .login-header .loginTab {
+      float: left;
+      width: 174px;
+      height: 54px;
+      border-bottom: 1px solid #f4f4f4;
+      font: 500 18px "Microsoft Yahei";
+      text-align: center;
+      color: #5e5e5e;
+      position: relative; }
+      #content-bg .login-header .loginTab a {
+        height: 18px;
+        position: absolute;
+        left: 0;
+        width: 99%;
+        text-decoration: none;
+        top: 16px;
+        border-right: 1px solid #f4f4f4; }
+        #content-bg .login-header .loginTab a.cur {
+          color: red; }
+  #content-bg .login-content {
+    width: 320px;
+    height: 250px; }
+    #content-bg .login-content #qrcodeMain {
+      display: none;
+      width: 320px; }
+      #content-bg .login-content #qrcodeMain .qrcode-main {
+        position: relative;
+        height: 165px;
+        text-align: center; }
+        #content-bg .login-content #qrcodeMain .qrcode-main .qrcode {
+          float: left;
+          position: absolute;
+          left: 85px;
+          top: 30px;
+          border: 1px solid #e6e6e6; }
+      #content-bg .login-content #qrcodeMain .qrcode-tip {
+        height: 80px;
+        width: 320px;
+        padding-top: 30px;
+        text-align: center;
+        position: relative; }
+        #content-bg .login-content #qrcodeMain .qrcode-tip .fontBlink {
+          position: absolute;
+          right: 0;
+          bottom: 10px;
+          color: #e40264;
+          text-decoration: underline; }
+    #content-bg .login-content #login-form p {
+      margin: 20px 50px 0; }
+      #content-bg .login-content #login-form p input {
+        width: 160px;
+        height: 30px;
+        padding: 0 4px;
+        border: 1px solid #ccc;
+        font: normal 14px/36px Arial,"Simsun";
+        color: #a5a5a5;
+        vertical-align: middle;
+        position: relative; }
+  #content-bg .login-bot {
+    overflow: hidden;
+    clear: both;
+    background-color: #fcfcfc;
+    padding: 9px 5px;
+    color: #a5a5a5;
+    position: relative;
+    border: 1px solid #f0f0f0; }
+    #content-bg .login-bot a {
+      float: left;
+      white-space: nowrap;
+      cursor: pointer;
+      color: #5e5e5e;
+      padding: 0 5px;
+      margin: 6px 0;
+      border-right: 1px solid #E7E6E6; }
+
+/*# sourceMappingURL=login.css.map */
