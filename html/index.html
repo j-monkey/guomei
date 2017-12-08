@@ -4,21 +4,215 @@
 		<meta charset="UTF-8">
 		<title>国美</title>
 		<link rel="stylesheet" href="../css/normalize.css">
-		<link rel="stylesheet" href="../css/public.css">
+		<link rel="stylesheet" href="../css/index.css">
 
 	</head>
 	<body>
+<!-- 顶部 -->
+	<div id="gome-top">
+		<div class="top-body index-wrapper clear">
+			<ul class="top-left left clear">
+				<li class='gome-user left'><a href="#">国美会员</a><i></i></li>
+				<li class='login-link left'><a href="">登录</a></li>
+				<li class='register-link left'><a href="">注册有礼</a><i></i></li>
+			</ul>
+			<ul class="top-right right clear">
+				<li class='my-list left'><a href="#">我的订单</a></li>
+				<li class='my-gomei left'><a href="#">我的国美</a><i></i></li>
+				<li class='for-company left'><a href="#">企业采购</a></li>
+				<li class='server left'><em></em><a href="#">服务中心</a><i></i></li>
+				<li class='link-nav left'><a href="#">网址导航</a><i></i></li>
+				<li class='phone-gome left'><em></em><a href="#">手机国美</a><i></i></li>	
+			</ul>
+		</div>
+	</div>
+
 		<!--头部-->
-		<div id="header">
-			<div class="h-top">
-				<div class="left"></div>
-				<div class="right"></div>
+		<div id="index-header" class='index-wrapper'>
+			<div class="left index-logo">
+				<a href="#"><img src="../images/index/logo.png" alt=""></a>
+				<a class='logo-gif' href="">
+					<img width="100" height="50" src="../images/index/11.gif">
+				</a>
 			</div>
-			<div class="h-search"></div>
-			<div class="h-bot"></div>
+			<div class='tosearch'>
+				<!-- 搜索框 -->
+				<div class="search-box">
+					<div class='searchType'>
+						<div class="search-type">
+							<span data-selected="goods">商品</span>
+							<i></i>
+						</div>
+						<ul class="search-type-list" style="display: none;">
+							<li class="search-type-item" data-selector="goods">商品</li>
+							<li class="search-type-item" data-selector="shop">店铺</li>
+							<li class="search-type-item" data-selector="topic">话题</li>
+							<li class="search-type-item" data-selector="group">圈子</li>
+						</ul>
+					</div>
+					<input type="text" id="searchInput" name="question"/>
+					<button type="button" class="search-btn">搜索</button>
+				</div>
+				<div class="hotkeyword">
+						<a class="highlight" rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/1631036585.html">最高减2000</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201712/1/1350396424.html?intcmp=sy-1000043098-1">首投送15元</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/24/1422888783.html">天梭腕表</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/1631036585.html">每满99减20</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/8/1133806548.html">iPad</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/9/jdcdnbgkh1109.html">华硕笔记本</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/28/qcssecpplz.html">车品2折起</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201708/2/shjdjxhs.html">净水器</a>
+						<a href="//www.gome.com.cn/top10/" target="_blank">商品排行榜</a>
+						<a href="//www.gome.com.cn/keywords/" target="_blank">热门推荐</a>
+					</div>
+			</div>
+
+			<div class="tocart right">
+				<div class='left'>
+					<a class="menulink cartlink" href="//cart.gome.com.cn/">
+						<em class="i-cart">
+							<span class="shopnum">
+								<span id="commerceItemQuantityId">0</span>
+								<i></i>
+								</span>
+						</em><span id="hdrcarttext">购物车空了</span><b></b>
+					</a>
+				</div>
+				<div class='left' style='display:none'>
+					<p><a href="">购物车</a>中还没有商品’赶紧选购吧！</p>
+				</div>
+
+			</div>
 		</div>
 		<!-- 悬浮导航 -->
-		<div class="pNav"></div>
+	<div class="category">
+		<div class="index-wrapper clear categorybox">
+			<div class="sidecategory left">
+				<h2 class="hover">
+					<a href="//list.gome.com.cn?intcmp=sy-1000036957" target="_blank">全部商品分类</a>
+				</h2>
+				<div class="lisbg">
+					<ul class="lisnav-ul" id="lisnav">
+						<li class="first edit-mode nav-item" modelid="1000037040">
+							<h3>
+								<a href="//tongxun.gome.com.cn/" target="_blank">手机</a>
+								<a href="//chongzhi.gome.com.cn/" target="_blank">充值</a>
+								<a href="//xiangji.gome.com.cn/" target="_blank">相机</a>
+								<a href="//digital.gome.com.cn/" target="_blank">智能数码</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item" modelid="1000037067">
+							<h3>
+								<a  href="//computer.gome.com.cn" target="_blank">电脑</a>
+								<a  href="//peijian.gome.com.cn/" target="_blank">办公配件</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item"  modeltype="4" modelid="1000036959">
+							<h3>
+								<a href="//electronic.gome.com.cn/" target="_blank">电视 影音</a>
+								<a href="//smart.gome.com.cn/" target="_blank">智能</a>
+								<a href="//mall.gome.com.cn/80011410/" target="_blank">国美管家</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item" data-index="3" modeltype="4" modelid="1000036986">
+							<h3>
+								<a href="//kt.gome.com.cn/" target="_blank">空调</a>
+								<a href="//bx.gome.com.cn/" target="_blank">冰箱</a>
+								<a href="//xyj.gome.com.cn/" target="_blank">洗衣机</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item" data-index="4" modeltype="4" modelid="1000037013">
+							<h3>
+								<a href="//life.gome.com.cn/" target="_blank">厨房卫浴</a>
+								<a href="//xiaojiadian.gome.com.cn/" target="_blank">生活电器</a>
+								<a href="//jinghuaqi.gome.com.cn/" target="_blank">净化器</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//furnit.gome.com.cn/" target="_blank">家具</a>
+								<a href="//decoration.gome.com.cn/" target="_blank">建材</a>
+								<a href="//home.gome.com.cn/" target="_blank">家装服务</a>
+								<p class="line"></p>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item" data-index="6" modeltype="4" modelid="1000037121">
+							<h3>
+								<a href="//jiafang.gome.com.cn/" target="_blank">家纺</a>
+								<a href="//jiaju.gome.com.cn/" target="_blank">家居</a>
+								<a href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/4227006553.html" target="_blank">每满99减20</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item" data-index="7" modeltype="4" modelid="1000037148">
+							<h3>
+								<a href="//alcohol.gome.com.cn/" target="_blank">食品酒水</a>
+								<a href="//baby.gome.com.cn/" target="_blank">母婴玩具</a>
+								<p class="line"></p>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//health.gome.com.cn/" target="_blank">医疗保健</a>
+								<a href="//beauty.gome.com.cn/" target="_blank">美妆个护</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a  href="//clothing.gome.com.cn/" target="_blank">服饰鞋帽</a>
+								<a href="//luxury.gome.com.cn/" target="_blank">箱包奢品</a>
+								<p class="line"></p>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//toysgifts.gome.com.cn/" target="_blank">运动户外</a>
+								<a href="//watch.gome.com.cn/" target="_blank">钟表首饰</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//car.gome.com.cn/" target="_blank">汽车整车</a>
+								<a href="//auto.gome.com.cn/" target="_blank">汽车用品</a>
+								<p class="line"></p>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//art.gome.com.cn" target="_blank">文化艺术</a>
+							</h3>
+						</li>
+						<li class="edit-mode nav-item">
+							<h3>
+								<a href="//lvxing.gome.com.cn/" target="_blank">旅行</a>
+								<a href="//movie.gome.com.cn/" target="_blank">电影票</a>
+								<a href="//piao.gome.com.cn/" target="_blank">演出票</a>
+								<a href="//gamecard.gome.com.cn/" target="_blank">游戏</a>
+							</h3>
+						</li>
+						<li class="lst edit-mode nav-item" data-index="14" modeltype="4" modelid="1000037310">
+							<h3>
+								<a href="//jr.gome.com.cn/" target="_blank">金融理财</a>
+								<a href="//fund.gome.com.cn/" target="_blank">基金理财</a>
+							</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="mainnav left">
+				<li class='left'><a class="nav_text_red" href="https://group.gome.com.cn" target="_blank"><span>圈子</span></a></li>
+				<li class='left'><a class="" href="//tuan.gome.com.cn?intcmp=sy-1000000378-2" target="_blank"><span>真划算</span></a><span class="tag_line"></span></li>
+				<li class='left'><a class="" href="//fashion.gome.com.cn/" target="_blank"><span>服装城</span></a></li>
+				<li class='left'><a class="" href="//market.gome.com.cn/" target="_blank"><span>超市</span></a></li>
+				<li class='left'><a class="" href="//jiadian.gome.com.cn/" target="_blank"><span>电器城</span></a></li>
+				<li class='left'><a class="" href="//gmdq.gome.com.cn" target="_blank"><span>国美电器</span></a></li>
+				<li class='left'><a class="" href="//car.gome.com.cn/" target="_blank"><span>汽车</span></a></li>
+				<li class='left'><a class="" href="//homes.gome.com.cn/" target="_blank"><span>家居家装</span></a><span class="tag_line"></span></li>
+				<li class='left'><a class="" href="//smart.gome.com.cn/?intcm" target="_blank"><span>智能</span></a></li>
+				<li class='left'><a class="" href="//mall.gome.com.cn/80011410/" target="_blank"><span>管家</span></a><span class="tag_hot"></span></li>
+				<li class='left'><a class="" href="//jr.gome.com.cn/" target="_blank"><span>金融</span></a></li>
+			</ul>
+		</div>
+	</div>
 
 		<!--轮播图-->
 		<div id="banner"></div>
@@ -30,10 +224,8 @@
 			<div class="hot"></div>
 		</div>
 		
-		<br>
-		<br>
-		<br>
-		<br><br><br><br><br><br><br><br>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/>
 <!-- 尾部 -->
 		<div class="foot-border">
 		<div id="gome-foot" class='index-wrapper' >

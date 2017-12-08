@@ -1,319 +1,62 @@
-.register {
-  border: 1px solid #E6E6E6;
-  padding-bottom: 21px;
-  margin-top: 90px;
-  position: relative;
-  background: url("../images/register/fuli.png") no-repeat scroll 580px -60px; }
-  .register .login-info {
-    position: absolute;
-    top: -30px;
-    right: 20px; }
-  .register .exchange {
-    position: absolute;
-    top: -54px;
-    left: 100px; }
-    .register .exchange li {
-      float: left;
-      width: 150px;
-      height: 40px;
-      text-align: center;
-      font: bold 14px/41px "Microsoft YaHei";
-      margin-left: 2px;
-      color: #5e5e5e;
-      background: #F3F3F3;
-      border: 1px solid #e6e6e6;
-      border-bottom: 0 none;
-      cursor: pointer; }
-    .register .exchange li.active {
-      background: #fff;
-      color: #cc0000;
-      border-top: 2px solid #cc0000; }
-  .register .form-list {
-    height: 500px;
-    padding-top: 30px;
-    margin-top: 10px; }
-    .register .form-list .padding {
-      position: absolute;
-      left: 150px;
-      top: 10px;
-      font-family: simsun; }
-    .register .form-list #registerForm {
-      font-size: 14px; }
-      .register .form-list #registerForm > div {
-        position: relative; }
-        .register .form-list #registerForm > div > i {
-          display: block;
-          width: 17px;
-          height: 17px;
-          background: url("../images/register/register.png") no-repeat 0 -20px;
-          overflow: hidden;
-          position: absolute;
-          top: 10px;
-          left: 435px; }
-      .register .form-list #registerForm .form-hide {
-        visibility: hidden;
-        height: 40px;
-        padding-left: 150px; }
-      .register .form-list #registerForm .form-show {
-        height: 40px; }
-        .register .form-list #registerForm .form-show > span {
-          padding-left: 100px;
-          display: inline;
-          width: 100; }
-        .register .form-list #registerForm .form-show input {
-          width: 288px;
-          height: 36px;
-          padding: 0 4px;
-          border: 1px solid #ccc;
-          font: normal 14px/36px Arial,"Simsun";
-          color: #a5a5a5;
-          vertical-align: middle;
-          position: relative; }
-        .register .form-list #registerForm .form-show .tips {
-          visibility: visible;
-          display: inline-block;
-          width: 320px;
-          height: 36px;
-          padding: 0 4px;
-          border: 1px solid #ccc;
-          font: normal 14px/36px Arial,"Simsun";
-          color: #C21919; }
-      .register .form-list #registerForm #boxCheck .slider {
-        display: inline-block;
-        width: 296px;
-        height: 36px;
-        border: 1px solid #ccc;
-        color: #a5a5a5;
-        vertical-align: middle;
-        position: relative; }
-        .register .form-list #registerForm #boxCheck .slider .hide-box {
-          display: inline-block;
-          height: 36px;
-          width: 0px;
-          background: #05EE38;
-          float: left;
-          z-index: 99; }
-        .register .form-list #registerForm #boxCheck .slider .slider-min {
-          position: absolute;
-          display: inline-block;
-          height: 16px;
-          width: 30px;
-          background: #05EE38;
-          padding: 10px 8px;
-          left: 0;
-          top: 0; }
-        .register .form-list #registerForm #boxCheck .slider .slider-box {
-          display: inline-block;
-          padding: 10px 60px 0;
-          color: #787878; }
-      .register .form-list #registerForm #submit-button {
-        padding-left: 170px; }
-        .register .form-list #registerForm #submit-button #submit {
-          color: white;
-          font-size: 16px;
-          background: red;
-          border: none;
-          width: 300px;
-          padding: 10px 0;
-          letter-spacing: 5px; }
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
 
-#gome-header #logo .login-logo {
-  background: url("../images/login/loginlogo.png") no-repeat; }
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-#content-bg {
-  width: 100%;
-  height: 480px;
-  background: #e40264; }
-  #content-bg .main-login {
-    height: 480px;
-    width: 1200px;
-    background-image: url("../images/login/main.jpg");
-    background-position: top center;
-    position: relative;
-    z-index: 990; }
-    #content-bg .main-login .login-box {
-      width: 350px;
-      float: right;
-      margin-top: 24px;
-      margin-right: 105px;
-      position: relative;
-      background: #fff;
-      overflow: visible; }
-  #content-bg .login-header {
-    position: relative;
-    height: 55px; }
-    #content-bg .login-header .loginTab {
-      float: left;
-      width: 174px;
-      height: 54px;
-      border-bottom: 1px solid #f4f4f4;
-      font: 500 18px "Microsoft Yahei";
-      text-align: center;
-      color: #5e5e5e;
-      position: relative; }
-      #content-bg .login-header .loginTab a {
-        height: 18px;
-        position: absolute;
-        left: 0;
-        width: 99%;
-        text-decoration: none;
-        top: 16px;
-        border-right: 1px solid #f4f4f4; }
-        #content-bg .login-header .loginTab a.cur {
-          color: red; }
-  #content-bg .login-content {
-    width: 320px;
-    height: 250px; }
-    #content-bg .login-content #qrcodeMain {
-      display: none;
-      width: 320px; }
-      #content-bg .login-content #qrcodeMain .qrcode-main {
-        position: relative;
-        height: 165px;
-        text-align: center; }
-        #content-bg .login-content #qrcodeMain .qrcode-main .qrcode {
-          float: left;
-          position: absolute;
-          left: 85px;
-          top: 30px;
-          border: 1px solid #e6e6e6; }
-      #content-bg .login-content #qrcodeMain .qrcode-tip {
-        height: 80px;
-        width: 320px;
-        padding-top: 30px;
-        text-align: center;
-        position: relative; }
-        #content-bg .login-content #qrcodeMain .qrcode-tip .fontBlink {
-          position: absolute;
-          right: 0;
-          bottom: 10px;
-          color: #e40264;
-          text-decoration: underline; }
-    #content-bg .login-content #login-form {
-      margin-top: 30px; }
-      #content-bg .login-content #login-form .checkbox {
-        margin: 20px 20px 20px 20px;
-        position: relative; }
-        #content-bg .login-content #login-form .checkbox .checkbox-right {
-          position: absolute;
-          right: -20px;
-          top: 0px; }
-          #content-bg .login-content #login-form .checkbox .checkbox-right a {
-            color: #888585; }
-          #content-bg .login-content #login-form .checkbox .checkbox-right .free-register {
-            color: blue; }
-        #content-bg .login-content #login-form .checkbox input {
-          margin-right: 10px; }
-      #content-bg .login-content #login-form p {
-        margin: 10px 20px 0; }
-        #content-bg .login-content #login-form p > input {
-          width: 288px;
-          height: 36px;
-          padding: 4px 10px;
-          border: 1px solid #ccc;
-          font: normal 14px/36px Arial,"Simsun";
-          color: #D3CCCC;
-          vertical-align: middle;
-          position: relative; }
-        #content-bg .login-content #login-form p #login-submit {
-          width: 308px;
-          height: 42px;
-          color: white;
-          font-size: 18px;
-          font-weight: bold;
-          background: red;
-          border: none;
-          letter-spacing: 10px; }
-  #content-bg .login-bot {
-    overflow: hidden;
-    clear: both;
-    background-color: #fcfcfc;
-    padding: 9px 5px;
-    color: #a5a5a5;
-    position: relative;
-    border: 1px solid #f0f0f0; }
-    #content-bg .login-bot a {
-      float: left;
-      white-space: nowrap;
-      cursor: pointer;
-      color: #5e5e5e;
-      padding: 0 5px;
-      margin: 6px 0;
-      border-right: 1px solid #E7E6E6; }
+body {
+  line-height: 1.5;
+  background: white;
+  overflow-x: hidden; }
 
-.index-wrapper {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0 0; }
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
 
-.foot-border {
-  border-top: 1px solid #dd00a7;
-  background: #f7f7f7;
-  margin-top: 15px;
-  zoom: 1; }
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
 
-.clearfix-box {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0 0;
-  background: #f7f7f7; }
-  .clearfix-box .clearfix {
-    display: inline-block;
-    padding: 0 50px 30px 0;
-    width: 265px; }
-    .clearfix-box .clearfix i {
-      display: block;
-      width: 45px;
-      height: 45px;
-      float: left;
-      background: url("../images/ui.png") 0 -135px; }
-    .clearfix-box .clearfix:nth-of-type(1) i {
-      background-position: 0 -135px; }
-    .clearfix-box .clearfix:nth-of-type(2) i {
-      background-position: -45px -135px; }
-    .clearfix-box .clearfix p strong {
-      color: #333;
-      display: block;
-      font: 400 16px/25px Arial,"Microsoft YaHei"; }
-    .clearfix-box .clearfix p a {
-      color: #999; }
-  .clearfix-box .qrcode-section {
-    position: absolute;
-    right: -10px;
-    top: 15px;
-    font-size: 0; }
-    .clearfix-box .qrcode-section em.code-sm {
-      width: 50px;
-      margin: 0 10px;
-      display: inline-block;
-      vertical-align: top;
-      text-align: center;
-      position: relative; }
-      .clearfix-box .qrcode-section em.code-sm > i {
-        width: 40px;
-        height: 25px;
-        background: url("../images/ui.png") -105px -135px;
-        display: inline-block; }
-      .clearfix-box .qrcode-section em.code-sm:nth-of-type(2) i {
-        background-position: -185px -135px; }
-      .clearfix-box .qrcode-section em.code-sm p {
-        font: 12px/22px Arial;
-        color: #999; }
-      .clearfix-box .qrcode-section em.code-sm > div {
-        position: absolute;
-        padding: 10px;
-        border: 1px solid #eee;
-        z-index: 1000;
-        background: #ffffff;
-        left: -50px;
-        bottom: 80px; }
-        .clearfix-box .qrcode-section em.code-sm > div > img {
-          display: block;
-          width: 171px;
-          border: none;
-          vertical-align: middle; }
+table, th, td {
+  vertical-align: middle; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+button, input, select, textarea, label {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h6, h6 {
+  font-weight: bold;
+  font-size: 100%; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
 
 body {
   background: #FFF;
@@ -325,7 +68,23 @@ body {
   width: 990px;
   margin: 0 auto; }
 
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear:after {
+  clear: both;
+  content: '.';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  height: 0; }
+
 ul, ol, li {
+  margin: 0;
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none; }
