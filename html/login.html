@@ -9,7 +9,7 @@
 	<body>
 	<!--头部-->
 	<div id="gome-header" class='wrapper'>
-			<div id="logo"><a data-code="public03001" href="//www.gome.com.cn/"></a></div>
+			<div id="logo"><a class='login-logo' data-code="public03001" href="//www.gome.com.cn/"></a></div>
 			<div id="head-title"></div>
 			<div id="head-box"></div>
 		</div>
@@ -41,12 +41,19 @@
 					</div>
 					<form action="" id='login-form'>
 						<p>
-							<label for="">用户名：</label><input type="text" name="username" id="user" />
+							<input type="text" name="username" id="user" placeholder="手机号码、用户名、邮箱、门店会员卡号" />
 						</p>
 						<p>
-							<label for="">密　码：</label><input type="text" name="password" id="pass" />
+							<input type="text" name="password" id="password" placeholder="密码" />
 						</p>
-						<p><input type="button" id="btn" value="登录" /></p>
+						<p class='checkbox'>
+							<span><input type="checkbox"/><label for="">自动登录</label></span>
+							<span class='checkbox-right'>
+								<a href="#">忘记密码</a>
+								<a href="#">&nbsp;|&nbsp;</a>
+								<a href="#" class='free-register'>免费注册</a></span>
+						</p>
+						<p><input type="button" id="login-submit" value="登录" /></p>
 					</form>
 				</div>
 				<div class="login-bot">

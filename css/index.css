@@ -1,0 +1,75 @@
+.index-wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0; }
+
+.foot-border {
+  border-top: 1px solid #dd00a7;
+  background: #f7f7f7;
+  margin-top: 15px;
+  zoom: 1; }
+
+.clearfix-box {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  background: #f7f7f7; }
+  .clearfix-box .clearfix {
+    display: inline-block;
+    padding: 0 50px 30px 0;
+    width: 265px; }
+    .clearfix-box .clearfix i {
+      display: block;
+      width: 45px;
+      height: 45px;
+      float: left;
+      background: url("../images/ui.png") 0 -135px; }
+    .clearfix-box .clearfix:nth-of-type(1) i {
+      background-position: 0 -135px; }
+    .clearfix-box .clearfix:nth-of-type(2) i {
+      background-position: -45px -135px; }
+    .clearfix-box .clearfix p strong {
+      color: #333;
+      display: block;
+      font: 400 16px/25px Arial,"Microsoft YaHei"; }
+    .clearfix-box .clearfix p a {
+      color: #999; }
+  .clearfix-box .qrcode-section {
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    font-size: 0; }
+    .clearfix-box .qrcode-section em.code-sm {
+      width: 50px;
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      position: relative; }
+      .clearfix-box .qrcode-section em.code-sm > i {
+        width: 40px;
+        height: 25px;
+        background: url("../images/ui.png") -105px -135px;
+        display: inline-block; }
+      .clearfix-box .qrcode-section em.code-sm:nth-of-type(2) i {
+        background-position: -185px -135px; }
+      .clearfix-box .qrcode-section em.code-sm p {
+        font: 12px/22px Arial;
+        color: #999; }
+      .clearfix-box .qrcode-section em.code-sm > div {
+        position: absolute;
+        padding: 10px;
+        border: 1px solid #eee;
+        z-index: 1000;
+        background: #ffffff;
+        left: -50px;
+        bottom: 80px; }
+        .clearfix-box .qrcode-section em.code-sm > div > img {
+          display: block;
+          width: 171px;
+          border: none;
+          vertical-align: middle; }
+
+/*# sourceMappingURL=index.css.map */

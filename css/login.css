@@ -1,3 +1,6 @@
+#gome-header #logo .login-logo {
+  background: url("../images/login/loginlogo.png") no-repeat; }
+
 #content-bg {
   width: 100%;
   height: 480px;
@@ -67,17 +70,41 @@
           bottom: 10px;
           color: #e40264;
           text-decoration: underline; }
-    #content-bg .login-content #login-form p {
-      margin: 20px 50px 0; }
-      #content-bg .login-content #login-form p input {
-        width: 160px;
-        height: 30px;
-        padding: 0 4px;
-        border: 1px solid #ccc;
-        font: normal 14px/36px Arial,"Simsun";
-        color: #a5a5a5;
-        vertical-align: middle;
+    #content-bg .login-content #login-form {
+      margin-top: 30px; }
+      #content-bg .login-content #login-form .checkbox {
+        margin: 20px 20px 20px 20px;
         position: relative; }
+        #content-bg .login-content #login-form .checkbox .checkbox-right {
+          position: absolute;
+          right: -20px;
+          top: 0px; }
+          #content-bg .login-content #login-form .checkbox .checkbox-right a {
+            color: #888585; }
+          #content-bg .login-content #login-form .checkbox .checkbox-right .free-register {
+            color: blue; }
+        #content-bg .login-content #login-form .checkbox input {
+          margin-right: 10px; }
+      #content-bg .login-content #login-form p {
+        margin: 10px 20px 0; }
+        #content-bg .login-content #login-form p > input {
+          width: 288px;
+          height: 36px;
+          padding: 4px 10px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #D3CCCC;
+          vertical-align: middle;
+          position: relative; }
+        #content-bg .login-content #login-form p #login-submit {
+          width: 308px;
+          height: 42px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          background: red;
+          border: none;
+          letter-spacing: 10px; }
   #content-bg .login-bot {
     overflow: hidden;
     clear: both;

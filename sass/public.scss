@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import 'register';
 @import 'login';
+@import 'index';
 body {
   background: #FFF;
   color: #5e5e5e;
@@ -35,32 +36,21 @@ body {
   #gome-header{
      padding-top:5px;
     #logo{
-      margin: 30px 40px 0 0;
-      
+      margin: 30px 40px 0 0; 
         a{
         display: block;
         width: 300px;
         height: 62px;
         margin-top: 20px;
-        @if $type == register{
-          background: url('../images/register/registerlogo.png') no-repeat;
-        }@else if $type ==login{
-          background: url('../images/login/loginlogo.png') no-repeat;
-        }
+        background: url('../images/register/registerlogo.png') no-repeat;
       }
     }
-   
   }
-
   #gome-content{
-  
    height: 562px; 
     padding:0 0 21 0;
   }
   // 尾部样式
-   #gome-foot{
-   background:#DD0606;
-  }
     #gome-foot-box{
       position: relative;
       padding: 20px 0 0;
@@ -96,20 +86,17 @@ body {
           display: block;
           width: 35px;
           height: 35px;
-          float: left;
-          
+          float: left;  
         }
-       
         @mixin bgposition($x){
           background: url(../images/ui.png)no-repeat $x+px -180px;
         }
         //0 35 70 105
         @for $i from 1 through 6{
           &:nth-of-type(#{$i}) i{
-                @include bgposition( -($i - 1) * 35);
+            @include bgposition( -($i - 1) * 35);
            }
         }
-       
         b{
           font: 12px/18px Arial,"Microsoft YaHei";
           display: block;
@@ -121,11 +108,9 @@ body {
         &:nth-of-type(3) b,&:nth-of-type(5) b{
           margin-top:9px;
         }
-      }
-      
-       
-      }
-
+      } 
     }
+
+  }
 
     

@@ -117,6 +117,9 @@
           padding: 10px 0;
           letter-spacing: 5px; }
 
+#gome-header #logo .login-logo {
+  background: url("../images/login/loginlogo.png") no-repeat; }
+
 #content-bg {
   width: 100%;
   height: 480px;
@@ -186,17 +189,41 @@
           bottom: 10px;
           color: #e40264;
           text-decoration: underline; }
-    #content-bg .login-content #login-form p {
-      margin: 20px 50px 0; }
-      #content-bg .login-content #login-form p input {
-        width: 160px;
-        height: 30px;
-        padding: 0 4px;
-        border: 1px solid #ccc;
-        font: normal 14px/36px Arial,"Simsun";
-        color: #a5a5a5;
-        vertical-align: middle;
+    #content-bg .login-content #login-form {
+      margin-top: 30px; }
+      #content-bg .login-content #login-form .checkbox {
+        margin: 20px 20px 20px 20px;
         position: relative; }
+        #content-bg .login-content #login-form .checkbox .checkbox-right {
+          position: absolute;
+          right: -20px;
+          top: 0px; }
+          #content-bg .login-content #login-form .checkbox .checkbox-right a {
+            color: #888585; }
+          #content-bg .login-content #login-form .checkbox .checkbox-right .free-register {
+            color: blue; }
+        #content-bg .login-content #login-form .checkbox input {
+          margin-right: 10px; }
+      #content-bg .login-content #login-form p {
+        margin: 10px 20px 0; }
+        #content-bg .login-content #login-form p > input {
+          width: 288px;
+          height: 36px;
+          padding: 4px 10px;
+          border: 1px solid #ccc;
+          font: normal 14px/36px Arial,"Simsun";
+          color: #D3CCCC;
+          vertical-align: middle;
+          position: relative; }
+        #content-bg .login-content #login-form p #login-submit {
+          width: 308px;
+          height: 42px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          background: red;
+          border: none;
+          letter-spacing: 10px; }
   #content-bg .login-bot {
     overflow: hidden;
     clear: both;
@@ -213,6 +240,80 @@
       padding: 0 5px;
       margin: 6px 0;
       border-right: 1px solid #E7E6E6; }
+
+.index-wrapper {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0; }
+
+.foot-border {
+  border-top: 1px solid #dd00a7;
+  background: #f7f7f7;
+  margin-top: 15px;
+  zoom: 1; }
+
+.clearfix-box {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  background: #f7f7f7; }
+  .clearfix-box .clearfix {
+    display: inline-block;
+    padding: 0 50px 30px 0;
+    width: 265px; }
+    .clearfix-box .clearfix i {
+      display: block;
+      width: 45px;
+      height: 45px;
+      float: left;
+      background: url("../images/ui.png") 0 -135px; }
+    .clearfix-box .clearfix:nth-of-type(1) i {
+      background-position: 0 -135px; }
+    .clearfix-box .clearfix:nth-of-type(2) i {
+      background-position: -45px -135px; }
+    .clearfix-box .clearfix p strong {
+      color: #333;
+      display: block;
+      font: 400 16px/25px Arial,"Microsoft YaHei"; }
+    .clearfix-box .clearfix p a {
+      color: #999; }
+  .clearfix-box .qrcode-section {
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    font-size: 0; }
+    .clearfix-box .qrcode-section em.code-sm {
+      width: 50px;
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      position: relative; }
+      .clearfix-box .qrcode-section em.code-sm > i {
+        width: 40px;
+        height: 25px;
+        background: url("../images/ui.png") -105px -135px;
+        display: inline-block; }
+      .clearfix-box .qrcode-section em.code-sm:nth-of-type(2) i {
+        background-position: -185px -135px; }
+      .clearfix-box .qrcode-section em.code-sm p {
+        font: 12px/22px Arial;
+        color: #999; }
+      .clearfix-box .qrcode-section em.code-sm > div {
+        position: absolute;
+        padding: 10px;
+        border: 1px solid #eee;
+        z-index: 1000;
+        background: #ffffff;
+        left: -50px;
+        bottom: 80px; }
+        .clearfix-box .qrcode-section em.code-sm > div > img {
+          display: block;
+          width: 171px;
+          border: none;
+          vertical-align: middle; }
 
 body {
   background: #FFF;
@@ -251,14 +352,11 @@ p {
       width: 300px;
       height: 62px;
       margin-top: 20px;
-      background: url("../images/login/loginlogo.png") no-repeat; }
+      background: url("../images/register/registerlogo.png") no-repeat; }
 
 #gome-content {
   height: 562px;
   padding: 0 0 21 0; }
-
-#gome-foot {
-  background: #DD0606; }
 
 #gome-foot-box {
   position: relative;
