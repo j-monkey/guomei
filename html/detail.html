@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <div id="gome-top">
+            <div class="top-body index-wrapper clear">
+                <ul class="top-left left clear">
+                    <li class='gome-user left'><a href="#">国美会员</a><i></i></li>
+                    <li class='login-link left'><a href="">登录</a></li>
+                    <li class='register-link left'><a href="">注册有礼</a><i></i></li>
+                </ul>
+                <ul class="top-right right clear">
+                    <li class='my-list left'><a href="#">我的订单</a></li>
+                    <li class='my-gomei left'><a href="#">我的国美</a><i></i></li>
+                    <li class='for-company left'><a href="#">企业采购</a></li>
+                    <li class='server left'><em></em><a href="#">服务中心</a><i></i></li>
+                    <li class='link-nav left'><a href="#">网址导航</a><i></i></li>
+                    <li class='phone-gome left'><em></em><a href="#">手机国美</a><i></i></li>	
+                </ul>
+            </div>
+        </div>
+	<!--头部-->
+    <div id="index-header" class='index-wrapper'>
+			<div class="left index-logo">
+				<a href="#"><img src="../images/index/logo.png" alt=""></a>
+				<a class='logo-gif' href="">
+					<img width="100" height="50" src="../images/index/11.gif">
+				</a>
+			</div>
+			<div class='tosearch'>
+				<!-- 搜索框 -->
+				<div class="search-box" id='detail-search-box'>
+					<div class='searchType'>
+						<div class="search-type">
+							<span data-selected="goods">商品</span>
+							<i></i>
+						</div>
+						<ul class="search-type-list" style="display: none;">
+							<li class="search-type-item" data-selector="goods">商品</li>
+							<li class="search-type-item" data-selector="shop">店铺</li>
+							<li class="search-type-item" data-selector="topic">话题</li>
+							<li class="search-type-item" data-selector="group">圈子</li>
+						</ul>
+					</div>
+					<input type="text" id="searchInput" name="question"/>
+                    <button type="button" class="search-btn">搜全站</button>
+                    <button type="button" class="search-btn2">搜本店</button>
+				</div>
+				<div class="hotkeyword">
+						<a class="highlight" rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/1631036585.html">最高减2000</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201712/1/1350396424.html?intcmp=sy-1000043098-1">首投送15元</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/24/1422888783.html">天梭腕表</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/1631036585.html">每满99减20</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/8/1133806548.html">iPad</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/9/jdcdnbgkh1109.html">华硕笔记本</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201711/28/qcssecpplz.html">车品2折起</a>
+						<a rel="nofollow" target="_blank" href="//prom.gome.com.cn/html/prodhtml/topics/201708/2/shjdjxhs.html">净水器</a>
+						<a href="//www.gome.com.cn/top10/" target="_blank">商品排行榜</a>
+						<a href="//www.gome.com.cn/keywords/" target="_blank">热门推荐</a>
+					</div>
+			</div>
+
+			<div class="tocart right">
+				<div class='left'>
+					<a class="menulink cartlink" href="//cart.gome.com.cn/">
+						<em class="i-cart">
+							<span class="shopnum">
+								<span id="commerceItemQuantityId">0</span>
+								<i></i>
+								</span>
+						</em><span id="hdrcarttext">购物车空了</span><b></b>
+					</a>
+				</div>
+				<div class='left' style='display:none'>
+					<p><a href="">购物车</a>中还没有商品’赶紧选购吧！</p>
+				</div>
+
+			</div>
+        </div>
+        <!-- 顶部导航 -->
+        <div class="top-nav nav-color">
+            <div class="nav990 wrapper" style="text-align: left;">
+                <ul class="left clear">
+                    <li class="nav-item left">
+                        <a class="nav-item-name" target="_blank" href="//mall.gome.com.cn/80013111">首页</a>
+                    </li>
+                    <li class="nav-item left">
+                        <a class="nav-item-name" target="_blank" href="//mall.gome.com.cn/80013111/2-0-1-0.html">所有商品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div id="breadcrumb">
+        <div class="breadcrumb-nav index-wrapper">
+            <ul class='left'>
+                <li style="display:none;">
+                        <a href="//www.gome.com.cn/" title="首页">首页</a>
+                </li>
+                <li class="linkBold">
+                        <a href="//alcohol.gome.com.cn/" title="食品酒水">食品酒水</a>
+                            <i class="icon-crumbs-right"></i>
+                </li>
+                <li>
+                        <a title="进口食品">进口食品</a>
+                            <i class="icon-crumbs-right"></i>
+                </li>
+                <li>
+                        <a href="//list.gome.com.cn/cat16035560.html" title="进口糖果巧克力">进口糖果巧克力</a>
+                            <i class="icon-crumbs-right"></i>
+                </li>
+                <li>
+                        <a href="//search.gome.com.cn/search?question=KDV" title="KDV">KDV</a>
+                            <i class="icon-crumbs-right"></i>
+                </li>
+                <li class="active">
+                        <a href="//item.gome.com.cn/A0006283238-pop8010316428.html" title="情人节糖果 ...">情人节糖果 ...</a>
+                </li>
+            </ul>
+
+           
+                    <br/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -7,11 +7,12 @@
 	</head>
 	 <link rel="stylesheet" type="text/css" href="../css/normalize.css"/> 
 	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	<script src="../js/require.js" data-main="../js/main"></script>
 	
 	<body>
 		<!--头部-->
 		<div id="gome-header" class='wrapper'>
-			<div id="logo"><a data-code="public03001" href="//www.gome.com.cn/"></a></div>
+			<div id="logo"><a href="//www.gome.com.cn/"></a></div>
 			<div id="head-title"></div>
 			<div id="head-box"></div>
 		</div>
@@ -19,18 +20,19 @@
 		<div id="gome-content" class=' wrapper'>
 		<div class="register">
 		<ul class='exchange'>
-			<li>个人用户注册</li>
+			<li class='active'>个人用户注册</li>
 			<li>企业用户注册</li>
 		</ul>
 		<p class="login-info">我已经注册，现在就<a href="./login.html">登录</a></p>
 		<div class="form-list">
 			<span class='padding'></span>
 		<!--个人注册表单 -->
-			<form id="registerForm" class='form' name="registerForm" action="" method="post">
+			<form id="registerForm" class='form' name="registerForm" action="../php/register.php" method="post" onSubmit="return myCheck()">
 			<!-- 用户名 -->
 			<div  id='username'>
 				<div class='form-show'>
-					<span><label>&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label></span><input type="text" name='username'/>
+					<span><label>&nbsp;&nbsp;&nbsp;&nbsp;用户名：</label></span>
+					<input type="text" name='username'/>
 					<div class='tips'>4-20个字符，支持汉字、字母、数字及“-”、“_”组合</div>
 				</div>
 				<i></i>
@@ -41,7 +43,8 @@
 			<!-- 密码 -->
 			<div id='password'>
 				<div class='form-show'>
-					<span><label>设置密码：</label></span><input type="password" name='password'/>
+					<span><label>设置密码：</label></span>
+					<input type="password" name='password'/>
 					<div class='tips'>6-20个字符，建议由数字,字母,符号两种以上组合</div>
 				</div>
 				<i></i>
@@ -55,9 +58,10 @@
 				</div>
 			</div>
 			<!-- 确认密码 -->
-			<div>
+			<div id='checkpassword'>
 				<div class='form-show'>
-					<span><label>确认密码：</label></span><input type="password" name='username'/>
+					<span><label>确认密码：</label></span>
+					<input type="password" name='username'/>
 					<div class='tips'>请确认密码！</div>
 				</div>
 				<i></i>
@@ -87,7 +91,12 @@
 			</div>
 			</form>	
 	<!-- 企业注册表单 -->
-	
+	<form id="Form-business" style='display:none' class='form' name="registerForm" action="../php/register.php" method="post" onSubmit="return myCheck()">
+			
+			<div id='submit-button'>
+				<input type="submit" id='submit' value='立即注册'>
+			</div>
+	</form>
 		
 		</div>
 		</div>	

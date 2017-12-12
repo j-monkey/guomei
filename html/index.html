@@ -91,7 +91,8 @@
 				<h2 class="hover">
 					<a href="//list.gome.com.cn?intcmp=sy-1000036957" target="_blank">全部商品分类</a>
 				</h2>
-				<div class="lisbg">
+				<div id="navBox" class='lisnav'>
+					<div class="lisbg"></div>
 					<ul class="lisnav-ul" id="lisnav">
 						<li class="first edit-mode nav-item" modelid="1000037040">
 							<h3>
@@ -199,31 +200,207 @@
 				</div>
 			</div>
 			<ul class="mainnav left">
-				<li class='left'><a class="nav_text_red" href="https://group.gome.com.cn" target="_blank"><span>圈子</span></a></li>
-				<li class='left'><a class="" href="//tuan.gome.com.cn?intcmp=sy-1000000378-2" target="_blank"><span>真划算</span></a><span class="tag_line"></span></li>
-				<li class='left'><a class="" href="//fashion.gome.com.cn/" target="_blank"><span>服装城</span></a></li>
-				<li class='left'><a class="" href="//market.gome.com.cn/" target="_blank"><span>超市</span></a></li>
-				<li class='left'><a class="" href="//jiadian.gome.com.cn/" target="_blank"><span>电器城</span></a></li>
-				<li class='left'><a class="" href="//gmdq.gome.com.cn" target="_blank"><span>国美电器</span></a></li>
-				<li class='left'><a class="" href="//car.gome.com.cn/" target="_blank"><span>汽车</span></a></li>
-				<li class='left'><a class="" href="//homes.gome.com.cn/" target="_blank"><span>家居家装</span></a><span class="tag_line"></span></li>
-				<li class='left'><a class="" href="//smart.gome.com.cn/?intcm" target="_blank"><span>智能</span></a></li>
-				<li class='left'><a class="" href="//mall.gome.com.cn/80011410/" target="_blank"><span>管家</span></a><span class="tag_hot"></span></li>
-				<li class='left'><a class="" href="//jr.gome.com.cn/" target="_blank"><span>金融</span></a></li>
+				<li class="cur" style="display: none;"><a href="//www.gome.com.cn/" target="_blank"><span>首页</span></a></li>
+				<li><a class="nav_text_red" href="https://group.gome.com.cn" target="_blank"><span>圈子</span></a></li>
+				<li><a class="" href="//tuan.gome.com.cn?intcmp=sy-1000000378-2" target="_blank"><span>真划算</span></a><span class="tag_line"></span></li>
+				<li><a class="" href="//fashion.gome.com.cn/" target="_blank"><span>服装城</span></a></li>
+				<li><a class="" href="//market.gome.com.cn/" target="_blank"><span>超市</span></a></li>
+				<li><a class="" href="//jiadian.gome.com.cn/" target="_blank"><span>电器城</span></a></li>
+				<li><a class="" href="//gmdq.gome.com.cn" target="_blank"><span>国美电器</span></a></li>
+				<li><a class="" href="//car.gome.com.cn/" target="_blank"><span>汽车</span></a></li>
+				<li><a class="" href="//homes.gome.com.cn/" target="_blank"><span>家居家装</span></a><span class="tag_line"></span></li>
+				<li><a class="" href="//smart.gome.com.cn/?intcm" target="_blank"><span>智能</span></a></li>
+				<li><a class="" href="//mall.gome.com.cn/80011410/" target="_blank"><span>管家</span></a><span class="tag_hot"></span></li>
+				<li><a class="" href="//jr.gome.com.cn/" target="_blank"><span>金融</span></a></li>
 			</ul>
 		</div>
 	</div>
 
 		<!--轮播图-->
-		<div id="banner"></div>
-		<div id="middle">
-			<div class="tobuy"></div>
-			<div class="bargins"></div>
-			<div class="finance"></div>
-			<div class="ylike"></div>
-			<div class="hot"></div>
+		<div id="banner">
+			
+			<div class="bg-l">
+				<a href="#"><img src="../images/index/bgl.png" alt=""></a>
+			</div>
+			<div class="bg-r">
+				<a href="#"><img src="../images/index/bgr.png" alt=""></a>
+			</div>
+			<div class="main_data">
+				<ul class="focus_box">
+					<li style="display: block;">
+						<a href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/2890664907.html" target="_blank">
+							<img class="lazyloading" src="../images/index/banner1.jpg" alt="" title="">
+						</a>
+						<span class="promotion_tags promotion_tags_left">
+							<img src="../images/index/banner.jpeg"/>
+						</span>
+					</li>
+					<li style="display: none;">
+						<a href="//prom.gome.com.cn/html/prodhtml/topics/201712/1/1273337558.html" target="_blank">
+							<img class="lazyloading" src="../images/index/banner2.jpg"/></a>
+						<span class="promotion_tags promotion_tags_left">
+							<img src="../images/index/banner.jpeg"/>
+					</span></li>
+					<li style="display: none;">
+						<a href="//prom.gome.com.cn/html/prodhtml/topics/201712/1/1273337558.html" target="_blank">
+							<img class="lazyloading" src="../images/index/banner2.jpg"/></a>
+						<span class="promotion_tags promotion_tags_left">
+							<img src="../images/index/banner.jpeg"/>
+					</span></li>
+
+				</ul>
+				<ol class="nav edit-mode">
+					<li class=""><a></a></li>
+					<li class=""><a></a></li>
+					<li class=""><a></a></li>
+					<li class=""><a></a></li>
+					<li class=""><a></a></li>
+					<li class=""><a></a></li>
+					<li class="cur"><a></a></li>
+					<li class=""><a></a></li>
+				</ol>
+				<div class="slider-extra">
+					<div class="btn pre">
+						<span class="btnbg"></span><p class="go_l" id="go_l"></p>
+					</div>
+					<div class="btn nex">
+						<span class="btnbg"></span><p class="go_r" id="go_r"></p>
+					</div>
+				</div>
+					
+			</div>
+
+			<div class="gm_sever_wrap" id="gm_sever_wrap">
+				<div class="gm_sever gm_kuaixun4">
+					<!-- 第一部分 -->
+					<div class="gm_kuaixun edit-mode">
+					<div class="gome_news">
+						<h2 class="gome_news_title">快讯</h2>
+						<a>更多<span></span></a>
+					</div>
+					<div class="gome_news_content">
+						<span>
+							<a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-8-1.html">公告</a>
+							<a class="gome_news_text  edit-mode" href="//news.gome.com.cn/20002920.html">因青岛库房搬迁快递延迟公告</a>
+						</span>
+						<span>
+							<a class="gome_news_sort edit-mode" href="//news.gome.com.cn/1-7-1.html">特惠</a>
+							<a class="gome_news_text red edit-mode" href="https://prom.gome.com.cn/html/prodhtml/topics/201708/22/8345780541.html">华为nova2s 新品预约购机赢好礼</a>
+						</span>
+						<span>
+								<a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-7-1.html">特惠</a>
+								<a class="gome_news_text  edit-mode" href="//prom.gome.com.cn/html/prodhtml/topics/201711/27/2890664907.html">狂享智生活 领劵满1000减80元</a>
+						</span>
+						<span>
+								<a class="gome_news_sort edit-mode" href="https://news.gome.com.cn/1-6-1.html?tzm=shanghaigongshangju">公益</a>
+								<a class="gome_news_text  edit-mode" href="//news.gome.com.cn/20002919.html?tzm=shanghaigongshangju">国美获社会力量参与救灾先锋单位</a>
+						</span>
+					</div>
+				</div>
+				<!-- 快讯图标 -->
+				<div class="icon_server_box edit-mode" modelid="1000060784" modeltype="">
+						<div class="icon_box" id="icon_box">
+							<ul class="icon_server" id="icon_server">
+								<li class="icon_server_li_bottom edit-mode cur" modelid="1000060786" modeltype="2">
+									<a class="icon_server_a" href="//chongzhi.gome.com.cn/" target="_blank" data-code="1000060785-1">
+										<i class="gm-icon">Ò</i>
+										<i class="icon_server_li_titile">充值</i>
+										<i class="icon_server_li_triangle"></i>
+									</a>
+								</li>
+								<li class="icon_server_li_bottom edit-mode" modelid="1000060789" modeltype="2">
+									<a class="icon_server_a" href="//piao.gome.com.cn/" target="_blank" data-code="1000060788-2">
+										<i class="gm-icon">Ô</i>
+										<i class="icon_server_li_titile">票务</i>
+										<i class="icon_server_li_triangle"></i>
+									</a>
+								</li>
+								<li class="icon_server_li_bottom edit-mode" modelid="1000060792" modeltype="2">
+									<a class="icon_server_a" href="//game.gome.com.cn/" target="_blank" data-code="1000060791-3">
+										<i class="gm-icon">Ú</i>
+										<i class="icon_server_li_titile">游戏</i>
+										<i class="icon_server_li_triangle"></i>
+									</a>
+								</li>
+								<li class="icon_server_li_bottom edit-mode" modelid="1000060795" modeltype="2">
+									<a class="icon_server_a" href="//jipiao.gome.com.cn/" target="_blank" data-code="1000060794-4">
+										<i class="gm-icon">Ë</i>
+										<i class="icon_server_li_titile">旅行</i>
+										<i class="icon_server_li_triangle"></i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060798" modeltype="2">
+									<a class="icon_server_a" href="//mei.gome.com.cn/" target="_blank" data-code="1000060797-5">
+										<i class="gm-icon">È</i>
+										<i class="icon_server_li_titile">美盈宝</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060801" modeltype="2">
+									<a class="icon_server_a" href="https://fund.gome.com.cn/" target="_blank" data-code="1000060800-6">
+										<i class="gm-icon">¸</i>
+										<i class="icon_server_li_titile">基金</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060804" modeltype="2">
+									<a class="icon_server_a" href="https://v.gome.com.cn" target="_blank" data-code="1000060803-7">
+										<i class="gm-icon">.</i>
+										<i class="icon_server_li_titile">视频</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060807" modeltype="2">
+									<a class="icon_server_a" href="//mall.gome.com.cn/80011410/" target="_blank" data-code="1000060806-8">
+										<i class="gm-icon">Ù</i>
+										<i class="icon_server_li_titile">找服务</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060810" modeltype="2">
+									<a class="icon_server_a" href="https://jr.gome.com.cn" target="_blank" data-code="1000060809-9">
+										<i class="gm-icon">Û</i>
+										<i class="icon_server_li_titile">金融</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060813" modeltype="2">
+									<a class="icon_server_a" href="//gs.gome.com.cn/" target="_blank" data-code="1000060812-10">
+										<i class="gm-icon">Ą</i>
+										<i class="icon_server_li_titile">定期</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060816" modeltype="2">
+									<a class="icon_server_a" href="//zhuan.gome.com.cn/" target="_blank" data-code="1000060815-11">
+										<i class="gm-icon">ı</i>
+										<i class="icon_server_li_titile">转让</i>
+									</a>
+								</li>
+								<li class="edit-mode" modelid="1000060819" modeltype="2">
+									<a class="icon_server_a" href="//help.gome.com.cn/bzfw" target="_blank" data-code="1000060818-12">
+										<i class="gm-icon">¨</i>
+										<i class="icon_server_li_titile">帮助</i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="icon_tab_wrap" style="top: 69px;">
+							<span class="ser_cur" style="display: block; left: 39px;"></span>
+							<ul class="icon_tab_content_ul">
+								<li><a gome="0"><iframe height="167" width="250" scrolling="no" frameborder="0" src="//chongzhi.gome.com.cn/MobileForm.html"></iframe></a></li>
+								<li style="display: none;"><a gome-src="//piao.gome.com.cn/layer/showAll.html" gome="0"><iframe height="167" width="250" scrolling="no" frameborder="0"></iframe></a></li>
+								<li style="display: none;"><a gome-src="//gamecard.gome.com.cn/gamecard/game/gameiframenav.html" gome="0"><iframe height="167" width="250" scrolling="no" frameborder="0"></iframe></a></li>
+								<li style="display: none;"><a gome-src="//lvxing.gome.com.cn/search-travel-min.html" gome="0"><iframe height="167" width="250" scrolling="no" frameborder="0"></iframe></a></li>
+							</ul>
+							<a class="close_icon"><i></i></a>
+						</div>
+					</div>
+
+
+
+				</div>
+							
+
+			<br/>
 		</div>
 		
+	</div>
+		<!-- banner图结束 -->
 		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<br/><br/><br/><br/><br/><br/><br/><br/>
 <!-- 尾部 -->

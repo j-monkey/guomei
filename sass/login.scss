@@ -10,11 +10,11 @@
 #content-bg{
     width: 100%;
     height: 480px;
-    background: #e40264;
+    background: #00e6eb;
     .main-login{
         height:480px;
         width:1200px;
-        background-image: url('../images/login/main.jpg');
+        background-image: url('http://gfs13.gomein.net.cn/T1LjLgB5_T1RCvBVdK.gif');
         background-position: top center;
         position: relative;
         z-index: 990;
@@ -60,7 +60,7 @@
             width: 320px;
             height:250px;
             #qrcodeMain{
-                display:none;
+                display:block;
                 width: 320px;
                 .qrcode-main{
                     position: relative;
@@ -72,6 +72,14 @@
                     left: 85px;
                     top:30px;
                     border: 1px solid #e6e6e6;
+                    }
+                    .qrcode-help{
+                        display:none;
+                       left:200px;
+                        top:30px;
+                        border:none;
+                        opacity:0.9;
+                        
                     }
                 }
                 .qrcode-tip{
@@ -90,7 +98,20 @@
                 } 
             }
            #login-form{
+                    display:none;
                     margin-top:30px;
+                   .err-tips{
+                       visibility:hidden;
+                        i{
+                            width: 14px;
+                            height: 14px;
+                            overflow: hidden;
+                            float: left;
+                            margin: 4px 5px 0 10px;
+                            display: inline-block;
+                           background: url('../images/login/spr-icon.png') no-repeat -41px -54px;
+                        }
+                   }
                 .checkbox{
                     margin:20px 20px 20px 20px;
                     position:relative;
@@ -130,8 +151,6 @@
                         font-weight:bold;
                         background:red;
                         border:none;
-                        
-                      
                         letter-spacing:10px;
                     }
                 }
@@ -154,6 +173,9 @@
                 padding: 0 5px;
                 margin: 6px 0;
                 border-right:1px solid #E7E6E6;
+                &:hover{
+                     color: red;
+                }
             }
         }
        

@@ -5,6 +5,7 @@
 		<title>登录</title>
 	<link rel="stylesheet" href="../css/login.css">
 	<link rel="stylesheet" href="../css/normalize.css">
+	<script src="../js/require.js" data-main="../js/main"></script>
 	</head>
 	<body>
 	<!--头部-->
@@ -12,7 +13,7 @@
 			<div id="logo"><a class='login-logo' data-code="public03001" href="//www.gome.com.cn/"></a></div>
 			<div id="head-title"></div>
 			<div id="head-box"></div>
-		</div>
+	</div>
 	<!-- 中间部分 -->
 	<div id='content-bg'>
 		<div class='wrapper main-login'>
@@ -23,15 +24,15 @@
 						<a href="javascript:void(0)" class="cur">扫码登录</a>
 					</div>
 					<div class="loginTab tabRight" id="tabRight">
-						<a href="javascript:void(0)">账户登录</a>
+						<a href="javascript:void(0)">账号登录</a>
 					</div>
 				</div>
 				<div class="login-content">
 					<!-- 扫码登录 -->
-					<div id="qrcodeMain">
+					<div id="qrcodeMain" class='changeContent'>
 						<div class="qrcode-main clearfix" id="barcodeId">
 							<img class="qrcode qrcode-Image" src="https://login.gome.com.cn/getQrcode.no?width=165&height=165&refreshkey=97" >
-							<img class="qrcode qrcode-help" src="../images/login/mobile" >
+							<img class="qrcode qrcode-help" src="../images/login/mobile.png" >
 						</div>
 						<div class="qrcode-tip">
 							<p>打开手机</p>
@@ -39,12 +40,13 @@
 							<a class="fontBlink fr registerBtn" href="https://reg.gome.com.cn/register/index/person" target="_blank" title="免费注册" tabindex="7">免费注册</a>
 						</div>
 					</div>
-					<form action="" id='login-form'>
+					<form action="" id='login-form' class='changeContent' >
+						<p class='err-tips'><i></i><span></span></p>
 						<p>
 							<input type="text" name="username" id="user" placeholder="手机号码、用户名、邮箱、门店会员卡号" />
 						</p>
 						<p>
-							<input type="text" name="password" id="password" placeholder="密码" />
+							<input type="password" name="password" id="password" placeholder="密码" />
 						</p>
 						<p class='checkbox'>
 							<span><input type="checkbox"/><label for="">自动登录</label></span>

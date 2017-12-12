@@ -50,7 +50,7 @@
    > div{
      position:relative;
      > i{
-      display: block;
+      display: none;
       width: 17px;
       height: 17px;
       background: url('../images/register/register.png') no-repeat 0 -20px;
@@ -83,7 +83,7 @@
         position: relative;
       }
       .tips{
-      visibility:visible;
+      visibility: hidden;
       display: inline-block;
       width: 320px;
       height: 36px;

@@ -214,7 +214,7 @@ p {
       .register .form-list #registerForm > div {
         position: relative; }
         .register .form-list #registerForm > div > i {
-          display: block;
+          display: none;
           width: 17px;
           height: 17px;
           background: url("../images/register/register.png") no-repeat 0 -20px;
@@ -242,7 +242,7 @@ p {
           vertical-align: middle;
           position: relative; }
         .register .form-list #registerForm .form-show .tips {
-          visibility: visible;
+          visibility: hidden;
           display: inline-block;
           width: 320px;
           height: 36px;
