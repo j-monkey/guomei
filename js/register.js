@@ -1,4 +1,4 @@
-define(['jquery','jquery.drag'],function($){
+define(['jquery','jquerydrag'],function($,drag){
 	
 	return{
 		tabchange:function(){
@@ -15,7 +15,8 @@ define(['jquery','jquery.drag'],function($){
 		//获得焦点提示出现事件	
 		formblur:function(){
 			var $input=$('.form-show').children('input');
-			var $reg=/^{\w||[\u2E80-\u9FFF]}{4,20}$/;
+			var $reg=/^(\w|[\u2E80-\u9FFF]){4,20}$/;
+			var $flag=false;
 			$input.on('focus',function(){
 				$(this).siblings('.tips').css({'visibility': 'visible'});
 			//验证用户名是否注册
@@ -77,19 +78,55 @@ define(['jquery','jquery.drag'],function($){
 				$('#checkpassword .tips').text('请再次确认密码！');
 			}
 		})
-		//拖动滑块运动
-//		$('#boxCheck .slider-min').on('mousemove',function(e){
-//			var e=e||window.event;
-//			console.log(e.pageX);
-//			console.log($('#boxCheck .slider-min').offset().left);
-//			
-//		})
+//		拖动滑块运动
+		$('#boxCheck .slider-min').drag();
+		$('#boxCheck .slider-min').on('mousemove',function(){
+			var $left=$(this).position().left;
+			if($left>0&&$left<=150){
+				$left=0;
+				$('#boxCheck .slider-min').animate({'left':$left},800)
+				
+			}else if($left>=150&&$left<250){
+				$left=250;
+				$('#boxCheck .slider-min').animate({'left':$left},800);
+				$('#boxCheck .slider-box').text('验证通过');
+				$('#boxCheck .slider').css({'background':'green'});
+				$flag=true;
+//				
+			}
 		
-		
-		
-		
-	}
+		})
 		//点击注册
+		$('#submit').on('click',function(){
+	var $totalflag=$('#username input').val()&& $('#password input').val()&&$('#checkpassword input').val()
+
+			if(!$totalflag){
+				alert('请输入完整注册信息！');
+				window.location.reload();
+			}else{
+				$.ajax({
+					type:'post',
+					url:'../php/register.php',
+					data:{
+						username:$('#username input').val(),
+						password:$('#password input').val()
+					},
+					success:function(d){
+						console.log(d);
+						if(!d){
+						confirm('注册成功！立即登录?')?window.location.href='login.html':window.location.reload();
+						}else{
+						alert('注册信息有误！');
+						}
+					}
+				})
+				
+			}
+		})
+
+	}
 		
+		
+	}	
 	
 })

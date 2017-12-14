@@ -133,6 +133,8 @@ p {
       white-space: nowrap; }
       #gome-foot-box .foot-box-top li a {
         color: #666; }
+      #gome-foot-box .foot-box-top li a:hover {
+        color: red; }
   #gome-foot-box p {
     font: 12px/22px Arial;
     color: #999;

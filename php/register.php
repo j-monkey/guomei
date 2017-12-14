@@ -15,8 +15,8 @@ header('content-type:text/html;setchart=utf-8');
 		echo true;	//1就是存在
 	}else{
 		echo false;
-	$query="insert into user values(null,'$password',null,null,'$name')";
-	$result =mysqli_query($link, $query);
+		$query="insert into user values(null,'$password','111111@qq.com',12,'$name')";
+		$result =mysqli_query($link, $query);
 	
 	}
 	

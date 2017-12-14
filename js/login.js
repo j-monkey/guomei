@@ -1,4 +1,4 @@
-define(['jquery'],function ($){
+define(['jquery','cookie'],function ($,cookie){
 	return{
 		loginTabChange:function(){
 			//tab切换
@@ -40,8 +40,16 @@ define(['jquery'],function ($){
 							$('.err-tips span').text('用户名或密码不匹配，请重新输入！');
 							}else{
 								$('.err-tips').css({'visibility':'hidden'});
-//								
-//								window.location.href='index.html';
+								//存cookie
+								var $obj = {
+				               		username:$('#user').val(),
+				               		password:$('#password').val()
+				               	}
+
+								var $saveArr=[];
+								$saveArr.push($obj);
+								var $day=7;
+								addCookie('user',JSON.stringify($saveArr),$day);
 								confirm("登陆成功")?window.location.assign("index.html"):"登录失败请重试";
 								
 							}

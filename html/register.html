@@ -27,7 +27,7 @@
 		<div class="form-list">
 			<span class='padding'></span>
 		<!--个人注册表单 -->
-			<form id="registerForm" class='form' name="registerForm" action="../php/register.php" method="post" onSubmit="return myCheck()">
+			<form id="registerForm" class='form' name="registerForm" method="post" action="../php/register.php" >
 			<!-- 用户名 -->
 			<div  id='username'>
 				<div class='form-show'>
@@ -61,7 +61,7 @@
 			<div id='checkpassword'>
 				<div class='form-show'>
 					<span><label>确认密码：</label></span>
-					<input type="password" name='username'/>
+					<input type="password" name='checkpassword'/>
 					<div class='tips'>请确认密码！</div>
 				</div>
 				<i></i>
@@ -75,8 +75,8 @@
 					<span><label>滑动验证：</label>
 					<div class='slider'>
 						<span class='hide-box'></span>
-						<span class='slider-box'>请按住滑块,拖到最右边</span>
 						<span class='slider-min'>＞＞</span>
+						<span class='slider-box'>请按住滑块,拖到最右边</span>
 					</div>	
 					<div class='tips'>请重新验证！</div>
 				</div>
@@ -87,7 +87,7 @@
 			</div>
 			<!-- 立即注册 -->
 			<div id='submit-button'>
-				<input type="submit" id='submit' value='立即注册'>
+				<input type="button" id='submit' class='register-submit' value='立即注册'>
 			</div>
 			</form>	
 	<!-- 企业注册表单 -->

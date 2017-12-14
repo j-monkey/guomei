@@ -1,5 +1,5 @@
 
-define([],function($, window, document, undefined) {
+define(["jquery"],function($) {
     var pluginName = "drag",
         defaults = {
             onDrag: function(event, elem) {},
@@ -27,9 +27,15 @@ define([],function($, window, document, undefined) {
             };
 
             var moveMe = function(e) {
+            	$left=e.pageX - offset.x;
+            	if($left<0){
+            		$left=0;
+            	}else if($left>250){
+            		$left=250;
+            	}
                 $elem.stop().css({
 //                  top: e.pageY - offset.y,
-                    left: e.pageX - offset.x
+                    left: $left
                 });
                 options.onMove(e, elem);
             };
@@ -47,4 +53,4 @@ define([],function($, window, document, undefined) {
             new Plugin(this, options);
         });
     };
-}(jQuery, window, document));
+});
