@@ -12,11 +12,16 @@
 <body>
 <div id="gome-top">
         <div class="top-body wrapper clear">
-            <ul class="top-left left clear">
-                <li class='gome-user left'><a href="#">国美会员</a><i></i></li>
-                <li class='login-link left'><a href="">登录</a></li>
+            <ul class="top-left left clear nologin">
+                <li class='gome-user left'><a href="index.html">国美首页</a><i></i></li>
+                <li class='login-link left'><a href="login.html">登录</a></li>
                 <li class='register-link left'><a href="">注册有礼</a><i></i></li>
             </ul>
+            <ul class="top-left left clear loginname" style="display:none">
+                	  <li class='goindex left'><a href="index.html">国美首页</a><i></i></li>
+					<li class='gome-user left'><a href="#">国美会员</a><i></i></li>
+					<li class='left exit'><a href="javascript:void(0)">退出</a><i></i></li>
+			</ul>
             <ul class="top-right right clear">
                 <li class='my-list left'><a href="#">我的订单</a></li>
                 <li class='my-gomei left'><a href="#">我的国美</a><i></i></li>
@@ -53,11 +58,13 @@
     			<li><i class='server'></i><span>联系客服</span></li>
     		</ul>
     	</div>
+    	<!--购物车内内容-->
     	<div class="container wrapper list-content">
-    		<ul>
+    		
+    		<!--<ul>
     			<li class='container1'><input type="checkbox" checked=""/></li>
     			<li class='container2'>
-    				<img src="http://gfs17.gomein.net.cn/T1WxdTB5Av1RCvBVdK_80.jpg" alt="">
+    				<img src="http://gfs17.gomein.net.cn/T1WxdTB5Av1RCvBVdK_80.jpg" alt=""/>
     			</li>
     			
     			<li class='container3'>
@@ -71,23 +78,23 @@
     				</div>
     			</li>
     			<li class='cart-good-real-price'>
-    				    ¥&nbsp;5399.00  
+    				    ¥&nbsp;<span>5399.00</span>  
     			</li>
     			<li class='counter'>
     				<div>
-    				<a href="javascript:;" gui-count-sub="" class="gui-count-btn gui-count-sub gui-count-disabled">-</a>
-    				<input dytest="" class="dytest " type="text" value="1">
-    				<a href="javascript:;" gui-count-add="" class="gui-count-btn gui-count-add">+</a>
+    				<a href="javascript:void(0);" class="gui-count-btn gui-count-sub gui-count-disabled">-</a>
+    				<input  class="dytest " type="text" value="1">
+    				<a href="javascript:void(0);" gui-count-add="" class="gui-count-btn gui-count-add">+</a>
     				</div>
     			</li>
     			<li class='s-totalprice'>
-    				
+    				¥&nbsp;<span>5399.00</span>  
     			</li>
     			<li class="delete">
     				<a href="javascript:void(0)">删除</a>
     			</li>
     			<li id='sid' style='width:0;height:0'></li>
-    		</ul>
+    		</ul>-->
     	</div>
     	<div class="cart-bottom-wrap"></div>
     </div>			

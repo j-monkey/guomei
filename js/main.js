@@ -3,7 +3,7 @@ require(['register','login','index','detail','cart'],function(register,login,ind
 	register.formblur();
 	login.loginTabChange();
 	login.appearImg();
-	login.Submit()
-	
+	login.Submit();
+
 	
 })

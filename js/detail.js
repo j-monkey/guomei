@@ -1,11 +1,10 @@
 define(['jquery','cookie'],function($,cookie){
 return {
 	loading:!function(){
-		
 		$str=window.location.search;
 		var $id=$str.split('=')[1];
-//		console.log($id);
-	if($str.split('=')[0]=='id'){
+//		console.log($str.split('=')[0]=='?id');
+	if($str.split('=')[0]=='?id'){
 		$.ajax({
 			type:"post",
 			url:"../php/index.php",
@@ -14,11 +13,10 @@ return {
 				sid:$id
 			},
 			success:function(d){
-//				console.log(d);
 				var $getobj=JSON.parse(d)[0];
-				console.log($getobj.title);
-				console.log($getobj.price);
-				console.log($getobj.url);
+//				console.log($getobj.title);
+//				console.log($getobj.price);
+//				console.log($getobj.url);
 				$('.hgroup h1').html($getobj.title);
 				$('#prdPrice').html('<em>¥</em>'+$getobj.price);
 //				$('#spic img').attr("src","http://gfs17.gomein.net.cn/T17hJvB5__1RCvBVdK_450.jpg");
@@ -26,13 +24,8 @@ return {
 				$('#bf img').attr('src',$getobj.url);
 				$('#list img').attr("src",$getobj.url);
 			}
-		});
-	
-		
-		
-	}
-		
-		
+		});	
+	}	
 	}(),
 	//放大镜
     magnifier:!function(){
@@ -96,6 +89,7 @@ return {
 	}(),
 	tocart:!function(){
 		//点击加入购物车
+	
 		$str=window.location.search;
 		var $sid=$str.split('=')[1];
 //		console.log($str.split('=')[1]);
